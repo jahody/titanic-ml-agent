@@ -14,18 +14,9 @@ The agent autonomously decides which tools to use and in what order.
 
 ## Installation
 
-1. Install dependencies:
+Install dependencies:
 ```bash
 pip install -r requirements.txt
-```
-
-2. Set your Anthropic API key:
-```bash
-# Windows
-set ANTHROPIC_API_KEY=your_api_key_here
-
-# Linux/Mac
-export ANTHROPIC_API_KEY=your_api_key_here
 ```
 
 ## Usage
@@ -36,16 +27,6 @@ python titanic_agent.py
 ```
 
 This will load data, explore, preprocess, train a Random Forest model, and generate predictions.csv.
-
-### Custom Usage
-
-```python
-from titanic_agent import TitanicMLAgent
-
-agent = TitanicMLAgent()
-task = "Train a logistic regression model and save predictions to my_predictions.csv"
-result = agent.run(task)
-```
 
 ## Available Tools
 
